@@ -4,13 +4,13 @@ picture: images/profile.jpg
 ---
 # Contact
 
-{% icon fa-envelope fa-fw %} [kenhung@berkeley.edu](mailto:kenhung@berkeley.edu)
+<i class="fa fa-envelope fa-fw"></i> [kenhung@berkeley.edu](mailto:kenhung@berkeley.edu)
 
-{% icon fa-building fa-fw %} 787 Evans Hall
+<i class="fa fa-home fa-fw"></i> 787 Evans Hall
 
-{% icon fa-github-square fa-fw %} [kenhungkk](https://github.com/kenhungkk)
+<i class="fa fa-github-square fa-fw"></i> [kenhungkk](https://github.com/kenhungkk)
 
-{% icon fa-linkedin-square fa-fw %} [kenkhung](https://www.linkedin.com/in/kenkhung)
+<i class="fa fa-linkedin-square fa-fw"></i> [kenkhung](https://www.linkedin.com/in/kenkhung)
 
 # About me
 
