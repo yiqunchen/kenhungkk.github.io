@@ -41,7 +41,12 @@
         <div class="footer">
             <hr>
             <div class="footer_body">
-                Last modified {% last_modified_at %b %-d %Y %}
+                <div>
+                    <i class="fa fa-envelope fa-fw"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                </div>
+                <div>
+                    <i class="fa fa-home fa-fw"></i> {{ site.office }}
+                </div>
             </div>
         </div> 
     </div>
