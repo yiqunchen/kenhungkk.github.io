@@ -1,6 +1,7 @@
 ---
 layout: front
 picture: images/profile.jpg
+title: Home
 ---
 # Contact
 
