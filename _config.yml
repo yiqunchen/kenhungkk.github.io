@@ -1,0 +1,12 @@
+name: Kenneth Hung
+department: Department of Mathematics
+university: UC Berkeley
+keywords: Kenneth, Hung, Berkeley, math, mathematics, stat, statistics
+url: http://math.berkeley.edu
+baseurl: /~kenhung
+email: kenhung@berkeley.edu
+markdown: rdiscount
+alias: http://kenhung.me
+
+gems:
+  - jekyll-last-modified-at

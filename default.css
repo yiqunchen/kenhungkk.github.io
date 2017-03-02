@@ -1,0 +1,174 @@
+---
+color1: '#00BFC4'
+color1_grey: '#979797'
+color2: '#F8766D'
+---
+
+body {
+    font-family:    "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:      90%;
+    font-weight:    300;
+    margin:         0;
+}
+
+ul.navbar {
+    list-style-type:    none;
+    margin:             0;
+    padding:            0;
+    top:                0;
+    width:              200px;
+    position:           fixed;
+    height:             100%;
+    overflow:           auto;
+    font-weight:        700;
+    background-color:   #EFEFEF;
+}
+
+ul.navbar li.header {
+    color:          {{ page.color1_grey }};
+    display:        block;
+    padding:        16px 0 16px 32px;
+    text-transform: lowercase;
+}
+
+ul.navbar li a {
+    display:            block;
+    padding:            16px 0 16px 32px;
+    text-decoration:    none;
+    text-transform:     lowercase;
+}
+
+ul.navbar li a:hover {
+    background-color:   {{ page.color1 }};
+    color:              #FFFFFF;
+}
+
+ul.navbar li a.active {
+    background-color:   #FFFFFF;
+    color:              {{ page.color1 }};
+}
+
+b {
+    font-weight:    500;
+}
+
+hr {
+    border:             0;
+    height:             1px;
+    background-image:   -webkit-linear-gradient(left, rgba(0,0,0,0.25),
+                            rgba(0,0,0,0.75), rgba(0,0,0,0.25));
+    background-image:   -moz-linear-gradient(left, rgba(0,0,0,0.25),
+                            rgba(0,0,0,0.75), rgba(0,0,0,0.25));
+    background-image:   -ms-linear-gradient(left, rgba(0,0,0,0.25),
+                            rgba(0,0,0,0.75), rgba(0,0,0,0.25));
+    background-image:   -o-linear-gradient(left, rgba(0,0,0,0.25),
+                            rgba(0,0,0,0.75), rgba(0,0,0,0.25));
+}
+
+a:link, a:visited {
+    color:              {{ page.color1 }};
+    text-decoration:    none;
+}
+
+a:hover, a:active {
+    color:  {{ page.color2 }};
+}
+
+ul {
+    list-style: square outside;
+}
+
+div.main {
+    max-width:      700px;
+    margin-top:     25px;
+    margin-left:    auto;
+    margin-bottom:  25px;
+    margin-right:   auto;
+    border-left:    transparent solid 225px;
+    border-right:   transparent solid 25px;
+
+}
+
+div.header {
+    font-family:    "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+div.address {
+    padding-left:   1em;
+}
+
+div.title {
+    font-size:      200%;
+    text-transform: lowercase;
+}
+
+div.subtitle {
+    color:          {{ page.color1 }};
+    text-transform: lowercase;
+}
+
+div.body{
+    margin-top: 25px;
+}
+
+.profile{
+    float:          right;
+    width:          200px;
+    margin-left:    25px;
+    margin-bottom:  25px;
+}
+
+h1 {
+    text-transform: lowercase;
+    font-weight:    700;
+    line-height:    3em;
+    font-size:      110%;
+}
+
+h2 {
+    font-weight:    500;
+    font-size:      100%;
+}
+
+div.footer {
+    font-size:  80%;
+    margin-top: 25px;
+}
+
+div.footer_body{
+    margin-top: 10px;
+}
+
+table {
+    border-collapse:    collapse;
+    margin-top:         1em;
+    margin-bottom:      1em;
+}
+
+table.center {
+    margin-left:    auto;
+    margin-right:   auto;
+}
+
+thead tr:last-child th {
+    border-bottom:  2px solid;
+}
+
+tbody tr td {
+    border-top: 1px solid;
+}
+
+tbody tr:first-child td {
+    border-top: 0;
+}
+
+th {
+    font-weight:    500;
+    text-align:     left;
+    text-transform: lowercase;
+}
+
+tr th, tr td {
+    padding-left:   0.5em;
+    padding-right:  0.5em;
+}
