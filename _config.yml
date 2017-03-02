@@ -4,5 +4,5 @@ university: UC Berkeley
 keywords: Kenneth, Hung, Berkeley, math, mathematics, stat, statistics
 url: http://kenhung.me
 email: kenhung@berkeley.edu
-markdown: rdiscount
+markdown: kramdown
 office: 787 Evans Hall
