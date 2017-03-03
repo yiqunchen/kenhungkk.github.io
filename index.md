@@ -5,13 +5,14 @@ title: Home
 ---
 # Contact
 
-<i class="fa fa-envelope fa-fw"></i> [kenhung@berkeley.edu](mailto:kenhung@berkeley.edu)
+**Email**: [{{ site.email }}](mailto:{{ site.email }})
 
-<i class="fa fa-home fa-fw"></i> 787 Evans Hall
+**Office**: {{ site.office }}
 
-<i class="fa fa-github-square fa-fw"></i> [kenhungkk](https://github.com/kenhungkk)
-
-<i class="fa fa-linkedin-square fa-fw"></i> [kenkhung](https://www.linkedin.com/in/kenkhung)
+**Mailing address**:
+> Department of Mathematics  
+> 970 Evans Hall  
+> Berkeley, CA 94720
 
 # About me
 
