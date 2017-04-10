@@ -1,10 +1,17 @@
+# basic info
 name: Kenneth Hung
 department: Department of Mathematics
 university: UC Berkeley
 keywords: Kenneth, Hung, Berkeley, math, mathematics, stat, statistics
 url: http://kenhung.me
+
+# contacts
 email: kenhung@berkeley.edu
-markdown: kramdown
 office: 787 Evans Hall
 github: kenhungkk
 linkedin: kenkhung
+
+# technical setting
+permalink: /:categories/:year-:month-:day-:title.html
+markdown: kramdown
+mathjax: true
