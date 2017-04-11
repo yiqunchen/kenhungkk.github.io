@@ -130,6 +130,10 @@ h2 {
     font-size:      100%;
 }
 
+.center {
+    text-align: center;
+}
+
 div.footer {
     font-size:      80%;
     margin-top:     25px;
