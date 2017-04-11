@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: ℓ1-Penalized Likeihood Asymptotics
+title: ℓ1-Penalized Likelihood Asymptotics
 math: on
 ---
 Following a paper by [Lee et al. (2013)](https://arxiv.org/abs/1311.6238) on the correcting for the selection bias after lasso-based selection, a natural progression is to consider general penalized likelihood selections. In GLM, we are at least provided with a sufficient statistics, but this would not be the case in a more general likelihood setting, rendering the description of the selection event a lot more blurry.
