@@ -16,9 +16,11 @@
             "url": "{{ site.url }}"
         }
     </script>
-    <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+    {% if page.math %}
+        <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+    {% endif %}
     <link rel="stylesheet" type="text/css" href="{{"/default.css" | prepend: site.baseurl}}">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
