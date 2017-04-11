@@ -72,7 +72,6 @@ a:link, a:visited {
 
 a:hover, a:active {
     color:          {{ page.color2 }};
-    border-bottom:  1px dashed {{ page.color2 }};
 }
 
 ul {
