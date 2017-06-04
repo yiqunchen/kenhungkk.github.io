@@ -20,4 +20,4 @@ I am a fourth year Ph.D. student in the [Department of Mathematics](http://math.
 
 I took my qualifying exam on August 11 2016. The syllabus can be found here ([TeX](files/QualSyllabus.tex), [PDF](files/QualSyllabus.pdf)).
 
-My r&#233;esum&#233; is available [here](files/Resume.pdf).
+My r&#233;sum&#233; is available [here](files/Resume.pdf).
