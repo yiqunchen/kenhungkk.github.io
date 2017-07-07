@@ -13,5 +13,4 @@ I am interested in adaptive and selective inferences, as well as mathematical st
 
 # Talks
 
-- Rank Verification for Exponential Families, [MCP 2017](http://www.mcp-conference.org/hp/2017/)
-- Rank Verification for Exponential Families, [WHOA-PSI 2](http://www.math.wustl.edu/%7Ekuffner/WHOA-PSI-2.html)
+- Rank Verification for Exponential Families ([MCP 2017](http://www.mcp-conference.org/hp/2017/), [WHOA-PSI 2017](http://www.math.wustl.edu/%7Ekuffner/WHOA-PSI-2.html))
