@@ -5,6 +5,7 @@ navigation_weight: 2
 ---
 # UC Berkeley
 
+- **Fall 2017**: GSI for Math 1a Calculus with [Vivek Shende](https://math.berkeley.edu/~vivek/)
 - **Fall 2016**: GSI for [Stat 210a Theoretical Statistics](http://www.stat.berkeley.edu/~wfithian/courses/stat210a/) with [Will Fithian](http://www.stat.berkeley.edu/~wfithian/index.html)
 - **Spring 2016**: GSI for [Math 1b Calculus](https://math.berkeley.edu/~apaulin/1B_001%20%28Spring%202016%29.html) with [Alexander Paulin](https://math.berkeley.edu/~apaulin/)
 - **Fall 2015**: GSI for [Math 55 Discrete Mathematics](https://math.berkeley.edu/~libland/teaching/math-55/) with [David Li-Brand](https://math.berkeley.edu/~libland/)
