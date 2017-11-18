@@ -9,7 +9,7 @@ I am interested in adaptive and selective inferences, as well as mathematical st
 
 # Publications
 
-- [Rank Verification for Exponential Families](http://arxiv.org/abs/1610.03944). Kenneth Hung and William Fithian, *Annals of Statistics*, 2016, *in press*.
+- Rank Verification for Exponential Families. Kenneth Hung and William Fithian, *Annals of Statistics*, 2016, *in press*. ([arXiv](http://arxiv.org/abs/1610.03944), [git](https://github.com/kenhungkk/verifying-winner.git))
 
 # Talks
 
