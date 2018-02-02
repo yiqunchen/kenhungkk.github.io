@@ -11,7 +11,7 @@ navigation_weight: 2
 - **Spring 2016**: GSI for [Math 1b Calculus](https://math.berkeley.edu/~apaulin/1B_001%20%28Spring%202016%29.html) with [Alexander Paulin](https://math.berkeley.edu/~apaulin/)
 - **Fall 2015**: GSI for [Math 55 Discrete Mathematics](https://math.berkeley.edu/~libland/teaching/math-55/) with [David Li-Brand](https://math.berkeley.edu/~libland/)
 - **Summer 2015**: Instructor for Math 54 Linear Algebra and Differential Equations
-- **Spring 2015**: GSI for [Math 1b Calculus](http://alexandercoward.com/oneseries.html) with [Alexander Coward](http://www.alexandercoward.com)
+- **Spring 2015**: GSI for Math 1b Calculus with [Alexander Coward](http://www.alexandercoward.com)
 - **Fall 2014**: GSI for [Math 1a Calculus](http://math.berkeley.edu/~yxy/math1a.html) with [Xinyi Yuan](http://math.berkeley.edu/~yxy)
 
 # Caltech
