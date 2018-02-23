@@ -1,0 +1,49 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\begin{document}
+
+{\bf Quiz \#2; Tuesday, date: 01/23/2018}
+
+{\bf MATH 53 Multivariable Calculus with Stankova}
+
+{\bf Section \#117; time: 5 -- 6:30 pm}
+
+{\bf GSI name: Kenneth Hung}
+
+{\bf Student name: SOLUTIONS}
+
+\vspace*{0.25in}
+
+\begin{enumerate}
+\item Find the slope of the tangent line to the given polar curve at the point specified by the value of $\theta$:
+\[
+r = 1 + \sqrt{2} \cos \theta, ~~~~ \theta = \pi / 4.
+\]
+
+{\em Solution.} The slope of the tangent is given by
+\begin{align*}
+\frac{dy}{dx} & = \frac{\frac{dr}{d\theta} \sin \theta + r \cos \theta}{\frac{dr}{d\theta} \cos \theta - r \sin \theta} \\
+& = \frac{-\sqrt{2} \sin^2 \theta + \cos \theta + \sqrt{2} \cos^2 \theta}{-\sqrt{2} \sin \theta \cos\theta - \sin \theta - \sqrt{2} \sin \theta \cos \theta} \\
+& = \frac{\sqrt{2} \cos 2\theta + \cos\theta}{-\sqrt{2} \sin 2\theta - \sin\theta}.
+\end{align*}
+Plugging in $\pi / 4$ gives
+\[
+\frac{\sqrt{2} \cdot 0 + 1 / \sqrt{2}}{-\sqrt{2} - 1 / \sqrt{2}} = -\frac{1}{3}.
+\]
+
+\item {\em True / False?} It is possible to compute the arc length of a polar curve in form of $r = f(\theta)$ using the arc length formula for parametric curves.
+
+{\em Solution.} True. The polar curve can be regarded as the parametric equation
+\[
+x = f(\theta) \cos \theta, ~~~~ y = f(\theta) \sin \theta.
+\]
+It is just more cumbersome to compute with this instead of the polar curve arc length integral.
+
+\item {\em True / False?} The sum of two unit vectors is always a unit vector.
+
+{\em Solution.} False. The length of the sum of two unit vectors is not necessarily $1$. In fact, it can be as large as $2$ (try adding $\mathbf{i}$ to itself) and as small as $0$ (try adding $\mathbf{i}$ to $-\mathbf{i}$), or something in between (try adding $\mathbf{i}$ to $\mathbf{j}$).
+\end{enumerate}
+
+\end{document}

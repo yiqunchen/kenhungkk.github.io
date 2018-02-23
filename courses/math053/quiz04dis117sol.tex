@@ -1,0 +1,74 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\newcommand{\rr}{\mathbf{r}}
+
+\begin{document}
+
+{\bf Quiz \#4; Tuesday, date: 02/13/2018}
+
+{\bf MATH 53 Multivariable Calculus with Stankova}
+
+{\bf Section \#117; time: 5 -- 6:30 pm}
+
+{\bf GSI name: Kenneth Hung}
+
+{\bf Student name: SOLUTIONS}
+
+\vspace*{0.25in}
+
+\begin{enumerate}
+\item At what point do the curves $\rr_1(t) = \langle t, 1 - t, 8 + t^2 \rangle$ and $\rr_2(s) = \langle 4 - s, s - 3, s^2 \rangle$ intersect? Find their angle of intersection and leave the answer using inverse trigonometric function if necessary.
+
+{\em Solution.} At the intersection, the $s$-value and the $t$-value must satisfy
+\[
+\left\{\begin{array}{r c l}
+t & = & 4 - s \\
+1 - t & = & s - 3 \\
+8 + t^2 & = & s^2
+\end{array}\right.
+\]
+Substituting $t = 4-s$ into the last equation gives
+\begin{align*}
+8 + (4 - s)^2 & = s^2 \\
+24 - 8s + s^2 & = s^2 \\
+s & = 3,
+\end{align*}
+and so $t = 1$. The intersection coordinates can be obtained by plugging in either of these, and is $(1, 0, 9)$.
+
+The derivatives of $\rr_1(t)$ and $\rr_2(s)$ are
+\[
+\langle 1, -1, 2t \rangle ~~~~ \text{ and } ~~~~ \langle -1, 1, 2s \rangle
+\]
+respectively, and the tangent vectors at the intersection are
+\[
+\langle 1, -1, 2 \rangle ~~~~ \text{ and } ~~~~ \langle -1, 1, 6 \rangle
+\]
+respectively. So the angle between them is
+\[
+\cos^{-1} \frac{\langle 1, -1, 2 \rangle \cdot \langle -1, 1, 6 \rangle}{|\langle 1, -1, 2 \rangle| ~ |\langle -1, 1, 6 \rangle|} = \cos^{-1} \frac{10}{\sqrt{6} \sqrt{38}} = \cos^{-1} \frac{5}{\sqrt{57}}.
+\]
+
+\item {\em True / False?} The equation
+\[
+\frac{x^2}{a} + \frac{y^2}{b} + \frac{z^2}{c} = 1
+\]
+can give rise to different quadric surfaces, depending on the number of negative signs among $a$, $b$ and $c$. Since there can be $0$, $1$, $2$ and $3$, this can be four different types of quadric surface.
+
+{\em Solution.} {\bf False.} $a$, $b$ and $c$ cannot all be negative, as the left hand side would then always be negative when the right hand side is the positive number $1$. There are only three possible types of quadric surface in this case: ellipsoid, hyperboloid of one sheet and hyperboloid of two sheets.
+
+\item {\em True / False?} For any space curve with vector equation $\rr(t)$, since $\rr(t) \times \rr(t) = \mathbf{0}$, we have
+\[
+\mathbf{0} = \frac{d}{dt} [\rr(t) \times \rr(t)] = \rr'(t) \times \rr(t) + \rr'(t) \times \rr(t) = 2 \rr'(t) \times \rr(t),
+\]
+and so $\rr'(t)$ must either be parallel to or in the opposite direction of $\rr(t)$.
+
+{\em Solution.} {\bf False.} The product rule for cross products at the second equal sign would have given
+\[
+\rr'(t) \times \rr(t) + \rr(t) \times \rr'(t) = \mathbf{0},
+\]
+which does not prove anything. In fact for most curves, such as $\rr(t) = \langle t, t^2, t^3 \rangle$, we would not have $\rr(t)$ and $\rr'(t)$ being scalar multiples of each other.
+\end{enumerate}
+
+\end{document}

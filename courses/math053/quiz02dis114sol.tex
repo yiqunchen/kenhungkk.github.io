@@ -1,0 +1,57 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+{\bf Quiz \#2; Tuesday, date: 01/23/2018}
+
+{\bf MATH 53 Multivariable Calculus with Stankova}
+
+{\bf Section \#114; time: 2 -- 3:30 pm}
+
+{\bf GSI name: Kenneth Hung}
+
+{\bf Student name: SOLUTIONS}
+
+\vspace*{0.25in}
+
+\begin{enumerate}
+\item Find an equation of the sphere that passes through the origin and whose center is $(1, -2, 2)$.
+
+{\em Solution.} The radius of the sphere is given by
+\[
+\sqrt{(1 - 0)^2 + (-2 - 0)^2 + (2 - 0)^2} = 3.
+\]
+Thus the equation of the sphere is
+\[
+(x - 1)^2 + (y + 2)^2 + (z - 2)^2 = 9.
+\]
+
+\item {\em True / False?} Suppose $f$ and $g$ are functions of $t$, then the following two parametric curves has the same tangent line at $t = 0$:
+\[
+x = f(t), ~~~~ y = g(t);
+\]
+and
+\[
+x = f(-2t), ~~~~ y = g(-2t).
+\]
+
+{\em Solution.} True. There are two ways to arrive at this conclusion. First, the two parametric curves is in fact the same Cartesian curve, and $t = 0$ corresponds to the same point in both parametric curve, so the tangent line must be the same.
+
+Alternatively, the two tangent line has the same point on it (the point corresponding to $t = 0$). The slope of the tangent is the second parametric curve, by chain rule, is
+\[
+\left.\frac{-2g'(-2t)}{-2f'(-2t)}\right|_{t = 0} = \left.\frac{g'(-2t)}{f'(-2t)}\right|_{t = 0} = \frac{g'(0)}{f'(0)},
+\]
+the same as that in the first parametric curve.
+
+\item {\em True / False?} Given a polar curve $r = f(\theta)$, the area under the curve and above the $x$-axis from $\theta = \alpha$ to $\theta = \beta$ is always given by
+\[
+\int_\alpha^\beta \frac{1}{2} f(\theta)^2 \,d\theta.
+\]
+
+{\em Solution.} False. The integral formula provided computes the area bounded by the rays $\theta = \alpha$ and $\theta = \beta$, rather than the area under the curve.
+
+\end{enumerate}
+
+\end{document}

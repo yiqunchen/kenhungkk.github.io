@@ -1,0 +1,61 @@
+\documentclass{article}
+
+\usepackage{graphicx,amsmath}
+
+\begin{document}
+
+{\bf Quiz \#3; Tuesday, date: 02/06/2018}
+
+{\bf MATH 53 Multivariable Calculus with Stankova}
+
+{\bf Section \#114; time: 2 -- 3:30 pm}
+
+{\bf GSI name: Kenneth Hung}
+
+{\bf Student name: SOLUTIONS}
+
+\vspace*{0.25in}
+
+\begin{enumerate}
+\item Find the scalar and vector projections of $\mathbf{b}$ onto $\mathbf{a}$.
+\[
+\mathbf{a} = \langle -6, 3, -2\rangle , ~~~~ \mathbf{b} = \langle 4, -1, 4\rangle.
+\]
+
+{\em Solution.} We apply the formula for scalar projection first.
+\begin{align*}
+\frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}|} & = \frac{\langle -6, 3, -2\rangle \cdot \langle 4, -1, 4\rangle}{|\langle -6, 3, -2\rangle|} \\
+& = \frac{-35}{\sqrt{49}} \\
+& = -5.
+\end{align*}
+We multiple this to a unit vector in the direction of $\mathbf{a}$ to find the vector projection next.
+\begin{align*}
+-5 \frac{\mathbf{a}}{|\mathbf{a}|} & = -5 \frac{\langle -6, 3, -2\rangle}{\sqrt{49}} \\
+& = \frac{5}{7} \langle 6, -3, 2\rangle.
+\end{align*}
+
+\item {\em True / False?} For any vector $\mathbf{a}$ and $\mathbf{b}$, we have
+\[
+(\mathbf{a} + \mathbf{b}) \times (\mathbf{a} - \mathbf{b}) = \mathbf{a} \times \mathbf{a} - \mathbf{b} \times \mathbf{b} = \mathbf{0} - \mathbf{0} = \mathbf{0}.
+\]
+
+{\em Solution.} False. We start by simplifying the left hand side.
+\begin{align*}
+(\mathbf{a} + \mathbf{b}) \times (\mathbf{a} - \mathbf{b}) & = \mathbf{a} \times \mathbf{a} - \mathbf{a} \times \mathbf{b} + \mathbf{b} \times \mathbf{a} - \mathbf{b} \times \mathbf{b} \\
+& = \mathbf{0} - \mathbf{a} \times \mathbf{b} - \mathbf{a} \times \mathbf{b} - \mathbf{0} \\
+& = -2 (\mathbf{a} \times \mathbf{b}),
+\end{align*}
+which is only $0$ if $\mathbf{a}$ and $\mathbf{b}$ are scalar multiples.
+
+\item {\em True / False?} In the three dimensional space, two lines must be in one of three cases:
+\begin{enumerate}
+\item they are parallel
+\item they intersect
+\item they do not lie on the same plane.
+\end{enumerate}
+
+{\em Solution.} True. Recall the definition of {\em skew lines} is two lines not on the same plane. Two lines on the same plane either intersect or are parallel.
+
+\end{enumerate}
+
+\end{document}
