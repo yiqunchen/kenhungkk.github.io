@@ -1,0 +1,45 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\newcommand{\rr}{\mathbf{r}}
+\newcommand{\ii}{\mathbf{i}}
+\newcommand{\jj}{\mathbf{j}}
+\newcommand{\kk}{\mathbf{k}}
+
+\begin{document}
+
+{\bf Quiz \#6; Tuesday, date: 02/27/2018}
+
+{\bf MATH 53 Multivariable Calculus with Stankova}
+
+{\bf Section \#117; time: 5 -- 6:30 pm}
+
+{\bf GSI name: Kenneth Hung}
+
+{\bf Student name: SOLUTIONS}
+
+\vspace*{0.25in}
+
+\begin{enumerate}
+\item Find the limit, if it exists, or show that the limit does not exist.
+\[
+\lim_{(x, y) \to (0, 0)} \frac{4y^2 \cos^2 x}{x^2 + y^2}
+\]
+
+{\em Solution.} First approach $(0, 0)$ along the $x$-axis. Then $f(x, 0) = 0 / x^2 = 0$ for $x \ne 0$, so $f(x, y) \to 0$. Next approach $(0, 0)$ along the $y$-axis. For $y \ne 0$, $f(0, y) = 4y^2 / y^2 = 4$, so $f(x, y) \to 4$. Since $f$ has two different limits along two different lines, the limit does not exist.
+
+\item {\em True / False?} The function $f(x, y) = \sqrt{x - y + 1}$ is not continuous at the point $(0, 1)$.
+
+{\em Solution.} {\bf False.} For any points $(x, y)$ within distance $\epsilon^2 / \sqrt{2}$ from $(0, 1)$ in the domain, $\{(x, y): x - y + 1 \ge 0\}$, we have $0 \le x - y + 1 \le \epsilon^2$, which means that $0 \le x - y + 1 \le \epsilon$ and
+\[
+|f(x, y) - f(0, 1)| \le \epsilon.
+\]
+Note that the definition of continuity at a point $(a, b)$ disregards the points near $(a, b)$ but outside of the domain.
+
+\item {\em True / False?} To show that the limit at a point $(a, b)$ exists, it suffices to find two paths to the point $(a, b)$ where the limits of $f(a, b)$ agree.
+
+{\em Solution.} {\bf False.} Checking all paths is not sufficient (refer to T/F Question 2 from Homework 15), not to say checking just two paths. Checking two paths is only sufficient for showing the limit does not exists.
+\end{enumerate}
+
+\end{document}
