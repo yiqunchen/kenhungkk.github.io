@@ -1,0 +1,52 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\newcommand{\rr}{\mathbf{r}}
+\newcommand{\ii}{\mathbf{i}}
+\newcommand{\jj}{\mathbf{j}}
+\newcommand{\kk}{\mathbf{k}}
+
+\begin{document}
+
+{\bf Quiz \#7; Tuesday, date: 03/06/2018}
+
+{\bf MATH 53 Multivariable Calculus with Stankova}
+
+{\bf Section \#117; time: 5 -- 6:30 pm}
+
+{\bf GSI name: Kenneth Hung}
+
+{\bf Student name:}
+
+\vspace*{0.25in}
+
+\begin{enumerate}
+\item Find the first partial derivatives of $f(x, y) = x^y$. Then use chain rule to find the derivative of $t^t$ with respect to $t$.
+
+{\em Solution.} We find the partial derivatives first. We have
+\[
+f_x = y x^{y-1}, ~~~~ f_y = x^y \ln x.
+\]
+Now we consider when $x = t$ and $y = t$, so the derivative of $t^t$ is
+\[
+f_x \frac{dx}{dt} + f_y \frac{dy}{dt} = yx^{y-1} + x^y \ln x = t t^{t-1} + t^t \ln t = t^t (1 + \ln t).
+\]
+
+\item {\em True / False?} Given a function at $f$, defined on a disc near the origin. To show that $f$ is not differentiable at the origin, it suffices to find three curves through the origin, such that their tangent lines at the origin do not lie on the same plane.
+
+{\em Solution.} {\bf True.} If $f$ is differentiable at the origin, then it must have a tangent plane (the linearization) that contains the tangent lines to any curves through the origin, contradicting the assumption that the three tangent lines do not lie on the same plane.
+
+\item {\em True / False?} Suppose
+\[
+z = f(x, y), ~~~~ x = g(t, u), ~~~~ y = h(u, v),
+\]
+then by chain rule we have
+\[
+\frac{\partial z}{\partial t} = \frac{\partial z}{\partial x} \frac{\partial x}{\partial t}.
+\]
+
+{\em Solution.} {\bf True.} Since $y$ does not depend on $t$, the partial derivative $\partial y / \partial t = 0$ and so chain rule reduces to the above.
+\end{enumerate}
+
+\end{document}

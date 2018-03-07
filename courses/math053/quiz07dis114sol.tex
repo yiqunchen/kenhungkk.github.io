@@ -1,0 +1,68 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\newcommand{\rr}{\mathbf{r}}
+
+\begin{document}
+
+{\bf Quiz \#7; Tuesday, date: 03/06/2018}
+
+{\bf MATH 53 Multivariable Calculus with Stankova}
+
+{\bf Section \#114; time: 2 -- 3:30 pm}
+
+{\bf GSI name: Kenneth Hung}
+
+{\bf Student name: SOLUTIONS}
+
+\vspace*{0.25in}
+
+\begin{enumerate}
+\item Use the Chain Rule to find the indicated partial derivatives.
+\[
+T = \frac{v}{u + 2v}, ~~~~ u = pq \sqrt{r}, ~~~~ v = p \sqrt{q} r;
+\]
+Find $\partial T / \partial p$, $\partial T / \partial q$, $\partial T / \partial r$ when $p = 1, q = 1, r = 4$.
+
+{\em Solution.} We start with the partial derivatives of $T(u, v)$.
+\begin{align*}
+\frac{\partial T}{\partial u} & = \frac{-v}{(u + 2v)^2}, \\
+\frac{\partial T}{\partial v} & = \frac{(u + 2v) - 2v}{(u + 2v)^2} \\
+& = \frac{-u}{(u + 2v)^2}.
+\end{align*}
+At $p = 1$, $q = 1$, $r = 4$, we have $u = 2$, $v = 4$ and
+\[
+\frac{\partial T}{\partial u} = -\frac{1}{25}, ~~~~ \frac{\partial T}{\partial v} = \frac{1}{50}.
+\]
+Now
+\begin{align*}
+\frac{\partial T}{\partial p} & = \frac{\partial T}{\partial u} \frac{\partial u}{\partial p} + \frac{\partial T}{\partial v} \frac{\partial v}{\partial p} = -\frac{1}{25} (q \sqrt{r}) + \frac{1}{50} (\sqrt{q} r) = 0, \\
+\frac{\partial T}{\partial q} & = \frac{\partial T}{\partial u} \frac{\partial u}{\partial q} + \frac{\partial T}{\partial v} \frac{\partial v}{\partial q} = -\frac{1}{25} (p \sqrt{r}) + \frac{1}{50} \left(\frac{pr}{2\sqrt{q}}\right) = -\frac{1}{25}, \\
+\frac{\partial T}{\partial r} & = \frac{\partial T}{\partial u} \frac{\partial u}{\partial r} + \frac{\partial T}{\partial v} \frac{\partial v}{\partial r} = -\frac{1}{25} \left(\frac{pq}{2 \sqrt{r}}\right) + \frac{1}{50} (p \sqrt{q}) = \frac{1}{100}.
+\end{align*}
+
+\item {\em True / False?} There exists a function not differentiable at the origin that is continuous at the origin and has partial derivatives at the origin.
+
+{\em Solution.} {\bf True.} The function mentioned in section,
+\[
+f(x, y) = \sqrt[3]{xy}
+\]
+is an example of such function. The continuity follows from $f$ being the composition of a polynomial with a power function. However it is not differentiable at the origin because we cannot find $\epsilon_1$ and $\epsilon_2 \to 0$ such that
+\begin{align*}
+\sqrt[3]{\Delta x \Delta y} = \epsilon_1 \Delta x + \epsilon_2 \Delta y,
+\end{align*}
+which is the definition of differentiability because the partial derivatives at the origin are $0$.
+
+{\em Remark.} A clearer solution can be obtained through the solutions to the solutions to Quiz 7 for Dis.\ 117.
+
+\item {\em True / False?} Suppose $g(x, y)$ is a linear function and $f(x, y)$ is a two-variable function, not necessarily linear. If
+\[
+f(0, 0) = g(0, 0) ~~~~ \text{ and } ~~~~ \lim_{(x, y) \to (0, 0)} |f(x, y) - g(x, y)| \to 0
+\]
+then $g$ is a good linear approximation to $f$, so $f$ is a differentiable function.
+
+{\em Solution.} {\bf False.} Consider the function $f(x, y) = \sqrt{x^2 + y^2}$ which does not even have partial derivatives. It is not differentiable and thus does not have good linear approximations. However $g(x, y) = 0$ will satisfy the requirements above.
+\end{enumerate}
+
+\end{document}
