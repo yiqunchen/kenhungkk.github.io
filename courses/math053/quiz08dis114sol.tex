@@ -1,0 +1,67 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\newcommand{\rr}{\mathbf{r}}
+
+\begin{document}
+
+{\bf Quiz \#8; Tuesday, date: 03/13/2018}
+
+{\bf MATH 53 Multivariable Calculus with Stankova}
+
+{\bf Section \#114; time: 2 -- 3:30 pm}
+
+{\bf GSI name: Kenneth Hung}
+
+{\bf Student name: SOLUTIONS}
+
+\vspace*{0.25in}
+
+\begin{enumerate}
+\item Find the absolute maximum and minimum values of $f$ on the set $D$, where
+\begin{align*}
+f(x, y) & = x^2 y \\
+D & = \{(x, y) \;|\; x \ge 0, y \ge 0, x^2 + y^2 \le 9\}
+\end{align*}
+
+{\em Solution.} Note that $D$ is a closed and bounded set, so we just need to check all critical points, and find the extremum on the boundary.
+
+We start by taking first derivatives.
+\[
+f_x = 2xy, ~~~~ f_y = x^2.
+\]
+So any points with $x = 0$ is a critical point. And so the critical points are thus $(0, y)$, where $0 \le y \le 3$. At these points, $f(x, y) = 0$.
+
+For the boundary, on $x = 0$ we have $f(x, y) = 0$. On $y = 0$ we have $f(x, y) = 0$. Finally for $x^2 + y^2 = 9$, we have
+\[
+f(x, y) = x^2 y = (9 - y^2) y = 9y - y^3.
+\]
+To find the extremum in this region, we differentiate with respect to $y$, giving $9 - 3y^2$, which is equal to $0$ when $y = \sqrt{3}$. At this point, we have $f(\sqrt{6}, \sqrt{3}) = 6 \sqrt{3}$.
+
+Comparing all these values we have found, we conclude the absolute maximum is $6 \sqrt{3}$ and the absolute minimum is $0$.
+
+\item {\em True / False?} The normal vector to the surface $z = f(x, y)$ at point $(a, b, f(a, b))$ is
+\[
+\langle f_x(a, b), f_y(a, b), -1\rangle.
+\]
+
+{\em Solution.} {\bf True.} We can rearrange the equation into $f(x, y) - z = 0$, which is the level surface of the function $F(x, y, z) = f(x, y) - z$. Therefore the normal vector is the gradient of $F$, which is $\langle f_x(a, b), f_y(a, b), -1\rangle$.
+
+{\em Alternative solution.} {\bf True.} Recall that the tangent plane is given by
+\begin{align*}
+f_x(a, b) (x - a) + f_y(a, b) (y - b) + c & = z \\
+f_x(a, b) x + f_y(a, b) - z & = f_x(a, b) a + f_y(a, b) b - c,
+\end{align*}
+giving the normal vector $\langle f_x(a, b), f_y(a, b), -1\rangle$.
+
+\item {\em True / False?} Suppose the second partial derivatives of $D$ is continuous on a disk near $(a, b)$. Then for second derivative test, if the determinant $D > 0$ and $f_{yy}(a, b) > 0$, we cannot determine if this is a local minimum or maximum because we do not know the sign of $f_{xx}(a, b)$.
+
+{\em Solution.} {\bf False.} $f_{yy}$ can be used to determine if it is a local maximum or a local minimum as well, in lieu of $f_{xx}$. In particular, because $D > 0$, we must have
+\[
+f_{xx} f_{yy} = D + (f_{xy})^2 > 0,
+\]
+so $f_{xx}$ and $f_{yy}$ must carry the same sign and checking any one of them is sufficient.
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\newcommand{\rr}{\mathbf{r}}
+\newcommand{\ii}{\mathbf{i}}
+\newcommand{\jj}{\mathbf{j}}
+\newcommand{\kk}{\mathbf{k}}
+
+\begin{document}
+
+{\bf Quiz \#8; Tuesday, date: 03/13/2018}
+
+{\bf MATH 53 Multivariable Calculus with Stankova}
+
+{\bf Section \#117; time: 5 -- 6:30 pm}
+
+{\bf GSI name: Kenneth Hung}
+
+{\bf Student name:}
+
+\vspace*{0.25in}
+
+\begin{enumerate}
+\item Find the directions in which the directional derivative of $f(x, y) = y^3 + y x^2$ at the point $(0, 1)$ has the value $1$.
+
+{\em Solution.} The gradient of $f$ is $\langle 2xy, 3y^2 + x^2\rangle$. At $(0, 1)$ this is $\langle 0, 3\rangle$. If a unit vector $\mathbf{u}$ gives a directional derivative of $1$, then we must have
+\[
+\langle 0, 3 \rangle \cdot \mathbf{u} = 1.
+\]
+Suppose $\mathbf{u} = \langle \cos \theta, \sin \theta\rangle$, then
+\[
+3 \sin \theta = 1 ~~~~ \Longrightarrow ~~~~ \sin \theta = \frac{1}{3},
+\]
+which means $\cos \theta = \pm \frac{\sqrt{8}}{3}$. So the unit vector $\mathbf{u}$ is $\langle \pm \frac{\sqrt{8}}{3}, 1 \rangle$.
+
+\item {\em True / False?} The normal vector to the surface $z = f(x, y)$ is three-dimensional, while the normal vector to the level curve of $z = f(x, y)$ is two-dimensional.
+
+{\em Solution.} {\bf True.} The surface $z = f(x, y)$ is a three-dimensional object, so the normal vector lives in the same space. The level curve lives in a two-dimensional space, so the normal vector to that lives in the two-dimensional space as well.
+
+\item {\em True / False?} The surface $z = x^2 - xy - y^2$ has a saddle point.
+
+{\em Solution.} {\bf True.} We start by finding all critical points. We take first derivatives:
+\[
+\frac{\partial z}{\partial x} = 2x - y, ~~~~ \frac{\partial z}{\partial y} = -x -2y.
+\]
+Setting both of these to zero gives a unique solution of $(x, y) = (0, 0)$. It remains to check what $D$ is. We have
+\[
+\frac{\partial^2 z}{\partial x \partial x} = 2, ~~~~ \frac{\partial^2 z}{\partial x \partial y} = \frac{\partial^2 z}{\partial y \partial x} = -1, ~~~~ \frac{\partial^2 z}{\partial y \partial y} = -2
+\]
+so
+\[
+D = \begin{vmatrix}
+2 & -1 \\
+-1 & -2
+\end{vmatrix} = -5,
+\]
+which is negative. So $(0, 0)$ is a saddle point.
+\end{enumerate}
+
+\end{document}
