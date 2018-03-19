@@ -1,7 +1,7 @@
 ---
-color1: '#702963'
-color2: '#A86F9D'
-grey1: '#3C3C3C'
+color1: '#6D7993'
+color2: '#9099A2'
+grey1: '#D5D5D5'
 ---
 
 body {
@@ -25,10 +25,11 @@ ul.navbar {
 }
 
 ul.navbar li.header {
-    color:          {{ page.grey1 }};
-    display:        block;
-    padding:        32px 0 32px 32px;
-    text-transform: lowercase;
+    color:              {{ page.color1 }};
+    display:            block;
+    padding:            32px 0 32px 32px;
+    text-transform:     lowercase;
+    text-decoration:    underline;
 }
 
 ul.navbar li a {
@@ -71,7 +72,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-    color:          {{ page.color2 }};
+    color:              {{ page.color2 }};
 }
 
 ul {
