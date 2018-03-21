@@ -1,0 +1,45 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\newcommand{\rr}{\mathbf{r}}
+
+\begin{document}
+
+{\bf Quiz \#9; Tuesday, date: 03/20/2018}
+
+{\bf MATH 53 Multivariable Calculus with Stankova}
+
+{\bf Section \#114; time: 2 -- 3:30 pm}
+
+{\bf GSI name: Kenneth Hung}
+
+{\bf Student name: SOLUTIONS}
+
+\vspace*{0.25in}
+
+\begin{enumerate}
+\item Calculate the iterated integral.
+\[
+\int_0^1 \int_0^1 (x + y)^3 \,dx \,dy
+\]
+
+{\em Solution.} We compute the integral iteratively.
+\begin{align*}
+\int_0^1 \int_0^1 (x + y)^3 \,dx \,dy & = \int_0^1 \left[\frac{(x + y)^4}{4}\right]_{x = 0}^{x = 1} \,dy \\
+& = \int_0^1 \frac{(y+1)^4 - y^4}{4} \,dy \\
+& = \left[\frac{(y+1)^5 - y^5}{20}\right]_0^1 \\
+& = \frac{31}{20} - \frac{1}{20} \\
+& = \frac{3}{2}.
+\end{align*}
+
+\item {\em True / False?} When we are are finding the maxima and minima of a nice function with constraint $x^2 + y^2 = 1$, we will always find an absolute maximum and an absolute minimum.
+
+{\em Solution.} {\bf True.} The problem can be viewed as finding the maxima and minima over a closed and bounded domain ($x^2 + y^2 = 1$), so by Theorem 14.7.8 on pg.\ 965 there will be an absolute maximum and an absolute minimum.
+
+\item {\em True / False?} The solid under the graph of $z = 8 - x^2 - y^2$ and over the region $[-2, 2] \times [-2, 2]$ can be thought of as the solid when $z = 8 - x^2$ is revolved about the $z$-axis, and can thus be computed without using a double integral.
+
+{\em Solution.} {\bf False.} While it is true that $z = 8 - x^2 - y^2$ can be obtained by revolving $z = 8 - x^2$ about the $z$-axis, the solid we consider here is not a solid of revolution. For example, a sketch of the solid will show that there are ``flat'' faces of this solid while the solid of revolution should have none.
+\end{enumerate}
+
+\end{document}

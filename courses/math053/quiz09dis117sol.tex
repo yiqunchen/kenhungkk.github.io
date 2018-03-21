@@ -1,0 +1,80 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\newcommand{\rr}{\mathbf{r}}
+\newcommand{\ii}{\mathbf{i}}
+\newcommand{\jj}{\mathbf{j}}
+\newcommand{\kk}{\mathbf{k}}
+
+\begin{document}
+
+{\bf Quiz \#9; Tuesday, date: 03/20/2018}
+
+{\bf MATH 53 Multivariable Calculus with Stankova}
+
+{\bf Section \#117; time: 5 -- 6:30 pm}
+
+{\bf GSI name: Kenneth Hung}
+
+{\bf Student name: SOLUTIONS}
+
+\vspace*{0.25in}
+
+\begin{enumerate}
+\item The following extreme value problems has a solution with both a maximum value and a minimum value. Use Lagrange multipliers to find the extreme values of the function subject to the given constraint.
+\[
+f(x, y, z) = x^3 + y^3 + z^3; ~~~~ x^2 + y^2 + z^2 = 1.
+\]
+
+{\em Solution.} We will rewrite the constraint as
+\[
+g(x, y, z) = x^2 + y^2 + z^2 - 1 = 0.
+\]
+So the gradients of $f$ and $g$ are
+\begin{align*}
+\nabla f & = \langle 3x^2, 3y^2, 3z^2 \rangle, \\
+\nabla g & = \langle 2x, 2y, 2z \rangle.
+\end{align*}
+Using $\lambda$ as the Lagrange multiplier, we want to solve for points such that
+\begin{align*}
+\nabla f & = \lambda \nabla g \\
+\langle 3x^2, 3y^2, 3z^2 \rangle & = \lambda \langle 2x, 2y, 2z \rangle,
+\end{align*}
+so we have
+\[
+x = 0 \text{ or } \frac{2\lambda}{3}, ~~~~ y = 0 \text{ or } \frac{2\lambda}{3}, ~~~~ z = 0 \text{ or } \frac{2\lambda}{3}.
+\]
+Clearly not all of $x$, $y$, $z$ cannot all be $0$ because of the constraint that $x^2 + y^2 + z^2 = 1$. For the nonzero variables, they must all be the same. So the critical points are
+\[
+(x, y, z) = \begin{cases}
+\pm (1, 0, 0) \text{ and their permutations} & \text{if one variable is nonzero} \\
+\pm \left(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}, 0\right) \text{ and their permutations} & \text{if two variables are nonzero} \\
+\pm \left(\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}\right) & \text{if all variables are nonzero}
+\end{cases}
+\]
+Now we can plug all of these into the function, which gives us the values of $\pm 1$, $\pm \frac{1}{\sqrt{2}}$, $\pm \frac{1}{\sqrt{3}}$. Hence the maximum value is $1$ and the minimum value is $-1$.
+
+\item {\em True / False?} If $f$ is a continuous function such that $f(x, y) = -f(y, x)$, then
+\[
+\int_a^b \int_a^b f(x, y) \,dx \,dy = 0.
+\]
+
+{\em Solution.} {\bf True.} We have
+\begin{align*}
+\int_a^b \int_a^b f(x, y) \,dx \,dy & = -\int_a^b \int_a^b f(y, x) \,dx \,dy \\
+& = -\int_a^b \int_a^b f(y, x) \,dy \,dx \\
+& = -\int_a^b \int_a^b f(x, y) \,dx \,dy,
+\end{align*}
+where the second equal sign follows from Fubini's theorem. Furthermore, intuitively the function is antisymmetric about the line $y = x$. Since the region on which we are integrating is symmetric about the line $y = x$, this should follow from symmetry.
+
+\item {\em True / False?} For a continuous function $f$, suppose $f_{\text{max}}, f_{\text{min}}, f_{\text{avg}}$ are its absolute maximum, absolute minimum and average value on a rectangle. Then we must have
+\[
+f_{\text{max}} \ge f_{\text{avg}} \ge f_{\text{min}}
+\]
+
+{\em Solution.} {\bf True.} We have $f_{\text{max}} \ge f(x) \ge f_{\text{min}}$.
+Now $f_{\text{max}} - f(x)$ and $f(x) - f_{\text{min}}$ are both nonnegative functions, so their average values must be nonnegative as well, which are $f_{\text{max}} - f_{\text{avg}}$ and $f_{\text{avg}} - f_{\text{min}}$. So $f_{\text{max}} \ge f_{\text{avg}} \ge f_{\text{min}}$.
+\end{enumerate}
+
+\end{document}
