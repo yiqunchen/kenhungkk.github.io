@@ -19,6 +19,7 @@ title: Math 53 (Dis. 114 and 117)
 - Quiz 7 ([pdf](quiz07dis114.pdf), [tex](quiz07dis114.tex)), solutions ([pdf](quiz07dis114sol.pdf), [tex](quiz07dis114.tex))
 - Quiz 8 ([pdf](quiz08dis114.pdf), [tex](quiz08dis114.tex)), solutions ([pdf](quiz08dis114sol.pdf), [tex](quiz08dis114.tex))
 - Quiz 9 ([pdf](quiz09dis114.pdf), [tex](quiz09dis114.tex)), solutions ([pdf](quiz09dis114sol.pdf), [tex](quiz09dis114.tex))
+- Quiz 10 ([pdf](quiz10dis114.pdf), [tex](quiz10dis114.tex)), solutions ([pdf](quiz10dis114sol.pdf), [tex](quiz10dis114.tex))
 
 # Dis. 117 Quizzes
 
@@ -31,6 +32,7 @@ title: Math 53 (Dis. 114 and 117)
 - Quiz 7 ([pdf](quiz07dis117.pdf), [tex](quiz07dis117.tex)), solutions ([pdf](quiz07dis117sol.pdf), [tex](quiz07dis117.tex))
 - Quiz 8 ([pdf](quiz08dis117.pdf), [tex](quiz08dis117.tex)), solutions ([pdf](quiz08dis117sol.pdf), [tex](quiz08dis117.tex))
 - Quiz 9 ([pdf](quiz09dis117.pdf), [tex](quiz09dis117.tex)), solutions ([pdf](quiz09dis117sol.pdf), [tex](quiz09dis117.tex))
+- Quiz 10 ([pdf](quiz10dis117.pdf), [tex](quiz10dis117.tex)), solutions ([pdf](quiz10dis117sol.pdf), [tex](quiz10dis117.tex))
 
 # Worksheet
 

@@ -1,0 +1,45 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\newcommand{\rr}{\mathbf{r}}
+
+\begin{document}
+
+{\bf Quiz \#10; Tuesday, date: 04/03/2018}
+
+{\bf MATH 53 Multivariable Calculus with Stankova}
+
+{\bf Section \#114; time: 2 -- 3:30 pm}
+
+{\bf GSI name: Kenneth Hung}
+
+{\bf Student name: SOLUTIONS}
+
+\vspace*{0.25in}
+
+\begin{enumerate}
+\item Use spherical coordinates to evaluate $\iiint_E z^2 \,dV$, where $E$ is the solid hemisphere $x^2 + y^2 + z^2 \le 4$, $y \ge 0$.
+
+{\em Solution.} By Equation 3 on pg.\ 1047, the integral is
+\begin{align*}
+\iiint_E x^2 \,dV & = \int_0^\pi \int_0^\pi \int_0^2 \rho^2 \cos^2 \phi \rho^2 \sin \phi \,d\rho \,d\theta \,d\phi \\
+& = \left(\int_0^\pi \cos^2 \phi \sin \phi \,d\phi\right) \left(\int_0^\pi \,d\theta\right) \left(\int_0^2 \rho^4 \,d\rho \right) \\
+& = \left[-\frac{\cos^3 \phi}{3}\right]_0^\pi \left[\theta\right]_0^\pi \left[\frac{\rho^5}{5}\right]_0^2 \\
+& = \frac{2}{3} \cdot \pi \cdot \frac{32}{5} \\
+& = \frac{64}{15} \pi.
+\end{align*}
+
+\item {\em True / False?} The volume of the solid enclosed by $z = x^2 + y^2 - 1$ and the plane $z = 0$ is given by
+\[
+\int_{-1}^1 \int_{-\sqrt{1 - y^2}}^{\sqrt{1 - y^2}} (1 - x^2 - y^2) \,dx \,dy
+\]
+
+{\em Solution.} {\bf True.} The region we will integrate over is the disc $x^2 + y^2 \le 1$. Over this region, $z = 0$ is in fact on top of $z = x^2 + y^2 - 1$, so the integrand should be $1 - x^2 - y^2$. The bounds given describes the region.
+
+\item {\em True / False?} For a region $R$, the integral $\iint_R \,dA$ gives the area of $R$.
+
+{\em Solution.} {\bf True.} This is analogous to integrating $\iiint_R \,dV$ giving the volume in triple integrals.
+\end{enumerate}
+
+\end{document}
