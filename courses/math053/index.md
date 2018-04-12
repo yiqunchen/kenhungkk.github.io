@@ -34,7 +34,6 @@ title: Math 53 (Dis. 114 and 117)
 - Quiz 8 ([pdf](quiz08dis117.pdf), [tex](quiz08dis117.tex)), solutions ([pdf](quiz08dis117sol.pdf), [tex](quiz08dis117.tex))
 - Quiz 9 ([pdf](quiz09dis117.pdf), [tex](quiz09dis117.tex)), solutions ([pdf](quiz09dis117sol.pdf), [tex](quiz09dis117.tex))
 - Quiz 10 ([pdf](quiz10dis117.pdf), [tex](quiz10dis117.tex)), solutions ([pdf](quiz10dis117sol.pdf), [tex](quiz10dis117.tex))
-quiz09dis117sol.pdf), [tex](quiz09dis117.tex))
 - Quiz 11 ([pdf](quiz11dis117.pdf), [tex](quiz11dis117.tex)), solutions ([pdf](quiz11dis117sol.pdf), [tex](quiz11dis117.tex))
 
 # Worksheet
