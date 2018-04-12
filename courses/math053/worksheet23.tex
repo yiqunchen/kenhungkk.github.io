@@ -1,0 +1,66 @@
+\documentclass{article}
+
+\usepackage{amsmath,amsfonts,tikz}
+
+\newcommand{\ii}{\mathbf{i}}
+\newcommand{\jj}{\mathbf{j}}
+\newcommand{\kk}{\mathbf{k}}
+\newcommand{\rr}{\mathbf{r}}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\aaa}{\mathbf{a}}
+\newcommand{\TT}{\mathbf{T}}
+\newcommand{\NN}{\mathbf{N}}
+\newcommand{\BB}{\mathbf{B}}
+
+\begin{document}
+
+{\bf Worksheet \#23; date: 04/12/2018}
+
+{\bf MATH 53 Multivariable Calculus}
+
+\begin{enumerate}
+\item {\em True / False?} $\mathbf{F}(x, y) = \langle x^2, y^2 \rangle$ is a conservative vector field.
+
+\item {\em True / False?} Suppose $f$ is a scalar function and $\nabla f$ is a force field. The work done by this force field along any one level curve of $f$ is zero.
+
+\item {\em True / False?} If we overlay a sketch of the gradient vector field $\nabla f$ and the contour map $f$, the arrows from the vector field will always be perpendicular to the contour lines.
+
+\item {\em True / False?} Suppose $f$ is a nonnegative function and $C$ is the curve parametrized as
+\[
+x = a + (b - a)t, ~~~~ y = 0, ~~~~ 0 \le t \le 1
+\]
+Then $\int_C f(x, y) \,ds \ge 0$ but $\int_a^b f(x, y) \,dx$ maybe negative.
+
+\item {\em (Stewart 16.3.7)} Determine whether or not $\mathbf{F}$ is a conservative vector field. If it is, find a function $f$ such that $\mathbf{F} = \nabla f$.
+\[
+\mathbf{F}(x, y) = (ye^x + \sin y) \ii + (e^x + x \cos y) \jj
+\]
+
+\item {\em (Stewart 16.3.9)} Determine whether or not $\mathbf{F}$ is a conservative vector field. If it is, find a function $f$ such that $\mathbf{F} = \nabla f$.
+\[
+(y^2 \cos x + \cos y) \ii + (2y \sin x - x \sin y) \jj
+\]
+
+\item {\em (Stewart 16.3.17)} Find a function $f$ such that $\mathbf{F} = \nabla f$ and use this to evaluate $\int_C \mathbf{F} \cdot d\rr$ along the given curve $\mathbf{C}$.
+\[
+\mathbf{F}(x, y, z) = yze^{xz} \ii + e^{xz} \jj + xye^{xz} \kk,
+\]
+where $C$ is $\rr(t) = (t^2 + 1) \ii + (t^2 - 1) \jj + (t^2 - 2t) \kk$, $0 \le t \le 2$.
+
+\item {\em (Stewart 16.3.23)} Find the work done by the force field $\mathbf{F}$ in moving an object from $P$ to $Q$.
+\[
+\mathbf{F}(x, y) = x^3 \ii + y^3 \jj, ~~~~ P(1, 0), Q(2, 2)
+\]
+
+\item {\em (Stewart 16.3.31)} Determine whether or not the given set is open, is connected, and is simply-connected.
+\[
+\{(x, y) \;|\; 0 < y < 3\}
+\]
+
+\item {\em (Stewart 16.3.33)} Determine whether or not the given set is open, is connected, and is simply-connected.
+\[
+\{(x, y) \;|\; 1 \le x^2 + y^2 \le 4, y \ge 0\}
+\]
+\end{enumerate}
+
+\end{document}
