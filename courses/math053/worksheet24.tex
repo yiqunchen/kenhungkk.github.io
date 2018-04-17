@@ -1,0 +1,47 @@
+\documentclass{article}
+
+\usepackage{amsmath,amsfonts,tikz}
+
+\newcommand{\ii}{\mathbf{i}}
+\newcommand{\jj}{\mathbf{j}}
+\newcommand{\kk}{\mathbf{k}}
+\newcommand{\rr}{\mathbf{r}}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\aaa}{\mathbf{a}}
+\newcommand{\TT}{\mathbf{T}}
+\newcommand{\NN}{\mathbf{N}}
+\newcommand{\BB}{\mathbf{B}}
+
+\begin{document}
+
+{\bf Worksheet \#24; date: 04/17/2018}
+
+{\bf MATH 53 Multivariable Calculus}
+
+\begin{enumerate}
+\item {\em (Concept check)} What is a positively oriented curve?
+
+\item {\em (Stewart 16.4.3; modified)} Evaluate the line integral directly first, then using Green's Theorem.
+\[
+\int_C xy \,dx + x^2 y^3 \,dy,
+\]
+where $C$ is the triangle with vertices $(0, 0)$, $(1, 2)$, $(1, 0)$.
+
+\item {\em (Stewart 16.4.17)} Use Green's Theorem to find the work done by the force $\mathbf{F}(x, y) = x(x+y) \ii + xy^2 \jj$ in moving a particle from the origin along the $x$-axis to $(1, 0)$, then along the line segment to $(0, 1)$ and then back to the origin along the $y$-axis.
+
+\item {\em (Stewart 16.4.22)} Let $D$ be a region bounded by a simple closed path $C$ in the $xy$-plane. Use Green's Theorem to prove that the coordinates of the centroid $(\bar{x}, \bar{y})$ of $D$ are
+\[
+\bar{x} = \frac{1}{2A} \oint_C x^2 \,dy, ~~~~ \bar{y} = -\frac{1}{2A} \oint_C y^2 \,dx
+\]
+where $A$ is the area of $D$.
+
+\item Turn in your homework, it's quiz time!
+
+\item {\em (Stewart 16.4.27; modified)} Use the method of Example 5 to calculate $\int_C \mathbf{F} \cdot \,d\rr$, where
+\[
+\mathbf{F}(x, y) = \frac{(x^2 - y^2) \ii + 2xy \jj}{(x^2 + y^2)^2}
+\]
+and $C$ is any positive oriented simple closed curve that encloses the origin.
+\end{enumerate}
+
+\end{document}
