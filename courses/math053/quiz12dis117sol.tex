@@ -1,0 +1,53 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\newcommand{\rr}{\mathbf{r}}
+\newcommand{\ii}{\mathbf{i}}
+\newcommand{\jj}{\mathbf{j}}
+\newcommand{\kk}{\mathbf{k}}
+
+\begin{document}
+
+{\bf Quiz \#12; Tuesday, date: 04/17/2018}
+
+{\bf MATH 53 Multivariable Calculus with Stankova}
+
+{\bf Section \#117; time: 5 -- 6:30 pm}
+
+{\bf GSI name: Kenneth Hung}
+
+{\bf Student name: SOLUTIONS}
+
+\vspace*{0.25in}
+
+\begin{enumerate}
+\item Show that the line integral is independent of path and evaluate the integral.
+\[
+\int_C -\cos y \,dx + (x \sin y - \cos y) \,dy,
+\]
+where $C$ is any path from $(3, 0)$ to $(1, \pi)$.
+
+{\em Solution.} The vector field $\mathbf{F} = \langle \cos y, x \sin y - \cos y \rangle$ is conservative because $x$- and $y$- component has continuous first-order partial derivatives everywhere, the domain is open and simply-connected, and
+\[
+\frac{\partial}{\partial x} (x \sin y - \cos y) = \sin y = \frac{\partial}{\partial y} (-\cos y).
+\]
+We proceed to find the function $f$ such that $\nabla f = \mathbf{F}$. Observe that
+\[
+\nabla (-x \cos y - \sin y) = \langle \cos y, x \sin y - \cos y \rangle,
+\]
+so $f(x, y) = -x \cos y - \sin y$ is the potential function. Now by Fundamental Theorem of Line Integral we have
+\[
+\int_C -\cos y \,dx + (x \sin y - \cos y) \,dy = f(1, \pi) - f(3, 0) = 1 - (-3) = 4.
+\]
+
+\item {\em True / False?} Fix two points $A$ and $B$ in a domain $D$. If $\int_C \mathbf{F} \cdot d\rr$ is the same for all paths $C$ from $A$ to $B$, then $\mathbf{F}$ must be conservative on $D$.
+
+{\em Solution.} {\bf False.} The domain $D$ may be not be connected. $A$ and $B$ maybe not be connected which makes the given condition vacuously true. Even $A$ and $B$ are connected, this will not help us for the part of the domain that are not connected to either of these.
+
+\item {\em True / False?} Here is another proof of Green's Theorem with holes in it: Suppose the region with hole is $D'$, the hole itself is $D_2$ and the region $D'$ with the hole filled is $D_1$. The outer and inner boundaries are $C_1$ and $C_2$. We can then apply Green's Theorem to $D_1$ and $D_2$, and subtract one integral from the other.
+
+{\em Solution.} {\bf False.} This would require Green's Theorem to hold for the hole, which may not be true, especially if $P$ and $Q$ do not have continuous first-order partial derivative for some points in the hole.
+\end{enumerate}
+
+\end{document}
