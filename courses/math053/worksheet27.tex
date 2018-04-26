@@ -1,0 +1,51 @@
+\documentclass{article}
+
+\usepackage{amsmath,amsfonts,tikz}
+
+\newcommand{\ii}{\mathbf{i}}
+\newcommand{\jj}{\mathbf{j}}
+\newcommand{\kk}{\mathbf{k}}
+\newcommand{\rr}{\mathbf{r}}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\aaa}{\mathbf{a}}
+\newcommand{\FF}{\mathbf{F}}
+\newcommand{\TT}{\mathbf{T}}
+\newcommand{\NN}{\mathbf{N}}
+\newcommand{\BB}{\mathbf{B}}
+\newcommand{\SSS}{\mathbf{S}}
+
+\DeclareMathOperator*{\curl}{curl}
+
+\begin{document}
+
+{\bf Worksheet \#27; date: 04/26/2018}
+
+{\bf MATH 53 Multivariable Calculus}
+
+\begin{enumerate}
+\item {\em (Stewart 16.7.9)} Evaluate the surface integral
+\[
+\iint_S x^2 yz \,dS,
+\]
+where $S$ is the part of the plane $2x + 2y + z = 4$ that lies above the rectangle $[0, 3] \times [0, 2]$.
+
+\item {\em (Stewart 16.7.17)} Evaluate the surface integral
+\[
+\iint_S (x^2 z + y^2 z) \,dS,
+\]
+where $S$ is the hemisphere $x^2 + y^2 + z^2 = 4$, $z \ge 0$.
+
+\item {\em (Stewart 16.7.25)} Evaluate the surface integral (a.k.a.\ flux) $\iint_S \FF \cdot d\SSS$ where $\FF = x \ii + y \jj + z^2 \kk$, and $S$ is the sphere with radius $1$ and center the origin, oriented outwards.
+
+\item {\em (Stewart 16.7.27; setup only)} Evaluate the surface integral (a.k.a.\ flux) $\iint_S \FF \cdot d\SSS$ where $\FF = y \jj - z \kk$, and $S$ consists of the paraboloid $y = x^2 + z^2$, $0 \le y \le 1$, and the disk $x^2 + y^2 \le 1$, $y = 1$, oriented outwards.
+
+\item What are the conditions for Stokes'?
+
+\item Similarity between Stokes' and Green's: $\curl \mathbf{F} \approx Q_x - P_y$. For Green's, think about $\langle P, Q, 0 \rangle$. This similarity shows up in verifying conservativeness too!
+
+\item {\em (Stewart 16.8.5)} Use Stokes' Theorem to evaluate $\iint_S \curl \FF \cdot d\SSS$, where $\FF = xyz \ii + xy \jj + x^2 yz \kk$, and $S$ consists of the top and the four sides (but not the bottom) of the cube with vertices $(\pm 1, \pm 1, \pm 1)$, oriented outwards.
+
+\item {\em (Stewart 16.8.9)} Use Stokes' Theorem to evaluate $\int_C \FF \cdot d\rr$, where $\FF(x, y, z) = xy \ii + yz \jj + zx \kk$, and $C$ is the boundary of the part of the paraboloid $z = 1 - x^2 - y^2$ in the first octant, oriented counterclockwise as viewed from above.
+\end{enumerate}
+
+\end{document}
